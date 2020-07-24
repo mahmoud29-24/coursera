@@ -4,7 +4,99 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Solution for Module-2</title>
-	<link rel="stylesheet" type="text/css" href="E:\mahmoud.com\solution for module-2.css">
+	<style type="text/css">
+				* {
+			box-sizing: border-box;
+		}
+		/** simple responsive framework **/ 
+		.row {
+			width: 100%;
+		}
+		.head {
+			text-align: center;
+			margin-bottom: 50px;
+		}
+		section {
+			width: 90%;
+			height: 180px;
+			margin-right: auto;
+			margin-left: auto;
+			font-family: sans-serif;
+		}
+			.sub1 {
+				text-align: right;
+				width: 160px;
+				height: 30px;
+				background-color: salmon;
+				float: right;
+				margin: 0;
+				margin-bottom: 20px;
+				text-align: center;
+			}
+			.sub2 {
+				text-align: right;
+				width: 160px;
+				height: 30px;
+				background-color: darkred;
+				float: right;
+				color: white;
+				margin: 0;
+				margin-bottom: 20px;
+				text-align: center;
+			}
+			.sub3 {
+				text-align: right;
+				width: 160px;
+				height: 30px;
+				background-color: wheat;
+				float: right;
+				margin: 0;
+				margin-bottom: 20px;
+				text-align: center;
+			}
+			p {
+				clear: right;
+				font-size: medium;
+				font-weight: 600;
+				margin-left: 10px; 
+			}
+			.border {
+				background-color: gray;
+				border: 2px solid black;
+			}
+		/** Large devices only **/
+		@media (min-width: 1200px) {
+			.col-lg-4 {
+				float: left;
+			}
+			.col-lg-4 {
+				width: 33%;
+		    }
+		}
+			/** Medium devices only **/
+			@media (min-width: 991px) and (max-width: 1199px) {
+				.col-md-6, .col-sm-12 {
+					float: left;
+				}
+				.col-md-6 {
+					width: 50%;
+				}
+				.col-md-12 {
+					width: 100%;
+					margin-top: 30px;
+				}
+			}
+			/** small devices only **/
+			@media (max-width: 991px) {
+				.col-sm-12 {
+					float: left;
+					margin: 30px;
+				}
+				.col-sm-12 {
+					width: 100%;
+				}
+			}
+	</style>
 </head>
 <body>
 	<h1 class="head">our menu</h1>
