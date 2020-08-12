@@ -1,34 +1,13 @@
-(function (window) {
 
-    var array = new Array();
-	
-	array[0] = function (name) {
-		console.log(speakword + " " + name);
-	};
+(function () {
 
-	array[1] = function (name) {
-		console.log(speakword + " " + name);
-	};
-
-	array[2] = function (name) {
-		console.log(speakword + " " + name);
-	};
-
-	array[3] = function (name) {
-		console.log(speakword + " " + name);
-	};
-
-	array[4] = function (name) {
-		console.log(speakword + " " + name);
-	};
+	var byeSpeaker = {};
+	var speakWord = "GoodBye";
 
 
-	var speakword = "Hello ";
+byeSpeaker.speak = function (name) {
+  console.log(speakWord + " " + name);
+}
 
-
-	array[0]("Paul");
-	array[1]("Frank");
-	array[2]("Larry");
-	array[3]("Paula");
-	array[4]("Laura");
-})(window);
+window.byeSpeaker = byeSpeaker;
+})();
